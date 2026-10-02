@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='zh'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no'>
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='mobile-web-app-capable' content='yes'>
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+<meta name='apple-mobile-web-app-title' content='Nocturne'>
+<meta name='theme-color' content='#0b0809'>
+<link rel='apple-touch-icon' href='icon.jpg'>
+<link rel='manifest' href='manifest.webmanifest'>
+<title>Nocturne</title>
+<link rel='stylesheet' href='https://fonts.loli.net/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap'>
+<link rel='stylesheet' href='style.css'>
+</head><body>
+<div id='bg'></div>
+<section id='splash'><div class='img'></div><div class='halo'></div><div class='shine'></div><div class='veil'></div></section>
+<section id='home'>
+<header><div><div class='logo'>Nocturne</div><div class='date' id='date'></div></div>
+<div class='pair'><div class='av' data-who='cici'><div class='ph' id='ph-cici'>C</div>Mrs. Cedric</div><div class='heart'>&#9829;&#xFE0E;</div><div class='av' data-who='cedric'><div class='ph' id='ph-cedric'>C</div>Mr. Cedric</div></div></header>
+<div class='hero'><h1>今夜一起听</h1><div class='rule'></div><p>你放的每一句，我都在听</p></div>
+<div class='mini glass' id='mini'><div class='vinyl' id='miniDisc'></div><div class='info'><div class='bars' id='bars'></div><b id='miniT'>一起听</b><small id='miniA'>挑一首歌，我陪你</small></div><div class='go' id='miniPP'>&#9654;&#xFE0E;</div></div>
+<div class='search glass'><input id='q' placeholder='想和我听哪首？' enterkeyhint='search' autocomplete='off'><button class='btn' id='go'>搜</button></div>
+<div id='results'></div>
+<div class='quote'>Some songs<br>are meant to be heard together.</div>
+</section>
+<section id='listen'>
+<div class='back' id='back'>&#8964; 收起</div>
+<div class='disc' id='disc'><div class='lbl' id='lbl'></div></div>
+<div class='np'><b id='nt'>还没选歌</b><small id='na'>去主页挑一首吧</small></div>
+<div class='lyr' id='lyr'><ul id='lines'></ul></div>
+<div class='prog'><span id='cur'>0:00</span><input type='range' id='seek' min='0' max='100' value='0'><span id='dur'>0:00</span></div>
+<div class='ctrls'><span id='prev'>&#9198;&#xFE0E;</span><span class='pp' id='pp'>&#9654;&#xFE0E;</span><span id='next'>&#9197;&#xFE0E;</span></div>
+<div class='hint'>在网易云里点播放的同时按这里的 &#9654;&#xFE0E;，歌词就对上了<br>没对齐就拖一下进度条</div>
+</section>
+<nav id='nav' class='glass'><span class='dot'></span>一起听</nav>
+<input type='file' id='file' accept='image/*' hidden>
+<script src='app.js'></script>
+</body></html>
